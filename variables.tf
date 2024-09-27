@@ -8,7 +8,7 @@ variable "name" {
 }
 
 variable "product" {
-  type = string
+  type    = string
   default = "maps"
 }
 
@@ -32,19 +32,19 @@ variable "application_type" {
 }
 
 variable "daily_data_cap_in_gb" {
-  type = number
+  type        = number
   description = "The Application Insights component daily data volume cap in GB"
-  default = 50
+  default     = 50
 }
 
 variable "sampling_percentage" {
-  type = number
+  type        = number
   description = "Specifies the percentage of the data produced by the monitored application that is sampled for Application Insights telemetry."
   default     = 100
 }
 
 variable "subscription_id" {
-  type = string
+  type        = string
   description = "The Subscription the Log Analytics workspace is in"
-  default = "3a9bae85-2f6e-47a1-a371-7ee3c84cf70b"
+  default     = "3a9bae85-2f6e-47a1-a371-7ee3c84cf70b"
 }

@@ -27,3 +27,8 @@ output "workspace_id" {
   description = "log analytics Workspace id"
   value       = azurerm_application_insights.this.workspace_id
 }
+
+output "workspace_id" {
+  description = "log analytics Workspace id"
+  value       = "/subscriptions/${var.subscription_id}/resourceGroups/maps-log-analytics-rg/providers/Microsoft.OperationalInsights/workspaces/${local.name}"
+}
