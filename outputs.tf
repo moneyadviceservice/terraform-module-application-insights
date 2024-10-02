@@ -23,7 +23,7 @@ output "resource_group_name" {
   description = "Resource group of log analytics Workspace "
 }
 
-# output "workspace_id" {
-#   description = "log analytics Workspace id"
-#   value       = "/subscriptions/${var.subscription_id}/resourceGroups/maps-log-analytics-rg/providers/Microsoft.OperationalInsights/workspaces/${local.name}"
-# }
+output "workspace_id" {
+  description = "log analytics Workspace id"
+  value       = "/subscriptions/${var.subscription_id}/resourceGroups/maps-log-analytics-rg/providers/Microsoft.OperationalInsights/workspaces/${local.name}"
+}

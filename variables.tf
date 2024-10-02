@@ -18,6 +18,7 @@ variable "env" {
 
 variable "override_name" {
   type = string
+  default = null
 }
 
 variable "resource_group_name" {
