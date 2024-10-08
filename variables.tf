@@ -17,13 +17,8 @@ variable "env" {
 }
 
 variable "override_name" {
-  type = string
-  default = null
-}
-
-variable "resource_group_name" {
   type    = string
-  default = "maps-log-analytics-rg"
+  default = null
 }
 
 variable "application_type" {
