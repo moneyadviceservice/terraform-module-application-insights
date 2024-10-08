@@ -25,12 +25,6 @@ variable "resource_group_name" {
   description = "Name of the resource group to deploy app insights to"
 }
 
-variable "override_name" {
-  type        = string
-  default     = null
-  description = "(Optional) Override the default app insights name"
-}
-
 variable "application_type" {
   type        = string
   description = "Specifies the type of Application Insights to create. Valid values are `java` for Java web, `Node.JS` for Node.js, `other` for General, and `web` for ASP.NET"

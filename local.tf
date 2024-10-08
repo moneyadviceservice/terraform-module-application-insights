@@ -1,3 +1,3 @@
 locals {
-  name = var.override_name == null ? "${var.product}-${var.env}" : var.override_name
+  name = var.name == null ? "${var.product}-${var.env}" : var.name
 }
