@@ -24,4 +24,6 @@ resource "azurerm_application_insights" "this" {
   workspace_id         = "/subscriptions/${var.subscription_id}/resourceGroups/${azurerm_resource_group.this.name}/providers/Microsoft.OperationalInsights/workspaces/${local.name}"
 
   daily_data_cap_notifications_disabled = true
+
+  depends_on = [azurerm_log_analytics_workspace.this]
 }
