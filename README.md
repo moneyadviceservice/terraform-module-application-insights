@@ -35,8 +35,7 @@ No modules.
 | <a name="input_env"></a> [env](#input\_env) | Target environmnet to deploy to | `string` | n/a | yes |
 | <a name="input_location"></a> [location](#input\_location) | Region location | `string` | `"UK South"` | no |
 | <a name="input_name"></a> [name](#input\_name) | (Optional) Custom name | `string` | n/a | yes |
-| <a name="input_override_name"></a> [override\_name](#input\_override\_name) | (Optional) Override the default app insights name | `string` | `null` | no |
-| <a name="input_product"></a> [product](#input\_product) | Name of the service/product of the service | `string` | `"maps"` | no |
+| <a name="input_product"></a> [product](#input\_product) | Name of the service/product of the service | `string` | n/a | yes |
 | <a name="input_resource_group_name"></a> [resource\_group\_name](#input\_resource\_group\_name) | Name of the resource group to deploy app insights to | `string` | n/a | yes |
 | <a name="input_sampling_percentage"></a> [sampling\_percentage](#input\_sampling\_percentage) | Specifies the percentage of the data produced by the monitored application that is sampled for Application Insights telemetry. | `number` | `100` | no |
 | <a name="input_subscription_id"></a> [subscription\_id](#input\_subscription\_id) | The Subscription the Log Analytics workspace is in | `string` | `"3a9bae85-2f6e-47a1-a371-7ee3c84cf70b"` | no |

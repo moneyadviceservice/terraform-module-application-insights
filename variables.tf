@@ -7,7 +7,6 @@ variable "location" {
 variable "product" {
   type        = string
   description = "Name of the service/product of the service"
-  default     = "maps"
 }
 
 variable "name" {
