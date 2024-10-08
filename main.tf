@@ -1,3 +1,13 @@
+data "azurerm_resource_group" "this" {
+  name     = "maps-log-analytics-rg"
+  location = "UK South"
+}
+
+data "azurerm_log_analytics_workspace" "this" {
+  name                = var.env == "prod" ? "maps-logs-prod" : "maps-logs-nonprod"
+  resource_group_name = data.azurerm_resource_group.this.name
+}
+
 resource "azurerm_application_insights" "this" {
 
   name = local.name
