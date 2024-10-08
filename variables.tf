@@ -10,6 +10,11 @@ variable "product" {
   default     = "maps"
 }
 
+variable "name" {
+  type        = string
+  description = "(Optional) Custom name"
+}
+
 variable "env" {
   type        = string
   description = "Target environmnet to deploy to"

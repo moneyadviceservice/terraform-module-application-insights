@@ -34,6 +34,7 @@ No modules.
 | <a name="input_daily_data_cap_in_gb"></a> [daily\_data\_cap\_in\_gb](#input\_daily\_data\_cap\_in\_gb) | The Application Insights component daily data volume cap in GB | `number` | `50` | no |
 | <a name="input_env"></a> [env](#input\_env) | Target environmnet to deploy to | `string` | n/a | yes |
 | <a name="input_location"></a> [location](#input\_location) | Region location | `string` | `"UK South"` | no |
+| <a name="input_name"></a> [name](#input\_name) | (Optional) Custom name | `string` | n/a | yes |
 | <a name="input_override_name"></a> [override\_name](#input\_override\_name) | (Optional) Override the default app insights name | `string` | `null` | no |
 | <a name="input_product"></a> [product](#input\_product) | Name of the service/product of the service | `string` | `"maps"` | no |
 | <a name="input_resource_group_name"></a> [resource\_group\_name](#input\_resource\_group\_name) | Name of the resource group to deploy app insights to | `string` | n/a | yes |
