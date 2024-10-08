@@ -1,6 +1,5 @@
 data "azurerm_resource_group" "this" {
-  name     = "maps-log-analytics-rg"
-  location = "UK South"
+  name = "maps-log-analytics-rg"
 }
 
 data "azurerm_log_analytics_workspace" "this" {
