@@ -1,24 +1,29 @@
 variable "location" {
-  type    = string
-  default = "UK South"
-}
-
-variable "name" {
-  type = string
+  type        = string
+  description = "Region location"
+  default     = "UK South"
 }
 
 variable "product" {
-  type    = string
-  default = "maps"
+  type        = string
+  description = "Name of the service/product of the service"
+  default     = "maps"
 }
 
 variable "env" {
-  type = string
+  type        = string
+  description = "Target environmnet to deploy to"
+}
+
+variable "resource_group_name" {
+  type        = string
+  description = "Name of the resource group to deploy app insights to"
 }
 
 variable "override_name" {
-  type    = string
-  default = null
+  type        = string
+  default     = null
+  description = "(Optional) Override the default app insights name"
 }
 
 variable "application_type" {
