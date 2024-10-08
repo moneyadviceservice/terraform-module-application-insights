@@ -17,7 +17,7 @@ resource "azurerm_application_insights" "this" {
   application_type     = var.application_type
   daily_data_cap_in_gb = var.daily_data_cap_in_gb
   sampling_percentage  = var.sampling_percentage
-  workspace_id         = "/subscriptions/${var.subscription_id}/resourceGroups/${data.azurerm_resource_group.this.name}/providers/Microsoft.OperationalInsights/workspaces/${local.name}"
+  workspace_id         = data.azurerm_log_analytics_workspace.this.workspace_id
 
   daily_data_cap_notifications_disabled = true
 }
