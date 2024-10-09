@@ -8,7 +8,7 @@ TODO: Add alerts.
 ## Example
 
 ```hcl
-module "application_insights" {
+module "this" {
   source = "git@github.com:moneyadviceservice/terraform-module-application-insights?ref=main"
 
   product = var.product
