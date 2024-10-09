@@ -1,7 +1,23 @@
 # terraform-module-application-insights
 A Terraform module for the creation of [Application Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview) instances.
 
+Log analytics workspaces for prod and non-prod are created in the [maps-core-infrastructure](https://dev.azure.com.mcas.ms/moneyandpensionsservice/MaPS%20Digital/_git/maps-core-infrastructure) repo.
+
 TODO: Add alerts.
+
+## Example
+
+```hcl
+module "application_insights" {
+  source = "git@github.com:moneyadviceservice/terraform-module-application-insights?ref=main"
+
+  product = var.product
+  env     = var.env
+
+  resource_group_name = data.azurerm_resource_group.this.name
+}
+
+```
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
