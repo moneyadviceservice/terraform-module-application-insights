@@ -47,3 +47,9 @@ variable "subscription_id" {
   description = "The Subscription the Log Analytics workspace is in"
   default     = "3a9bae85-2f6e-47a1-a371-7ee3c84cf70b"
 }
+
+variable "retention_in_days" {
+  type        = number
+  description = "(Optional) Specifies the retention period in days. Possible values are 30, 60, 90, 120, 180, 270, 365, 550 or 730. Defaults to 90"
+  default     = 90
+}
