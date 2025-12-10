@@ -8,7 +8,6 @@ data "azurerm_log_analytics_workspace" "this" {
 }
 
 resource "azurerm_application_insights" "this" {
-
   name = local.name
 
   location            = var.location
@@ -18,6 +17,7 @@ resource "azurerm_application_insights" "this" {
   daily_data_cap_in_gb = var.daily_data_cap_in_gb
   sampling_percentage  = var.sampling_percentage
   workspace_id         = "/subscriptions/${var.subscription_id}/resourceGroups/${data.azurerm_resource_group.this.name}/providers/Microsoft.OperationalInsights/workspaces/${local.workspace_name}"
+  retention_in_days    = var.retention_in_days
 
   daily_data_cap_notifications_disabled = true
 }
